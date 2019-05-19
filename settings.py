@@ -10,6 +10,7 @@ License: GNU General Public License
 gtsite = 'https://your-gitea-instance.com/api/v1/version'
 # Gitea GitHub API URL for latest Relase
 gtgithubapiurl = 'https://api.github.com/repos/go-gitea/gitea/releases/latest'
+gtgithubfileurl = 'https://github.com/go-gitea/gitea/releases/download/'
 # Gitea System
 gtsystem = 'linux-amd64'
 # Name and Path of gitea file
