@@ -11,9 +11,12 @@ import requests
 import os
 import functions
 
-if not functions.is_tool("xz"):
-	print ("missing dependency: xz")
+dependencys = ["xz", "sha256sum"]
+for prog in dependencys:
+    if not functions.is_tool(f"{prog}"):
+	print (f"missing dependency: {prog}")
 	quit()
+
 
 # Version from gitea site
 current_version = requests.get(settings.gtsite).json()['version']
