@@ -14,8 +14,10 @@ import functions
 dependencys = ["xz", "sha256sum"]
 for prog in dependencys:
     if not functions.is_tool(f"{prog}"):
-	print (f"missing dependency: {prog}")
-	quit()
+        print (f"missing dependency: {prog}")
+        quit()
+    else:
+        print (f"dependency present: {prog}")
 
 
 # Version from gitea site
